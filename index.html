@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Library</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Pi Library </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="https://pi-library-62.webnode.page/home/">home</a>
+            <a href="https://pi-library-62.webnode.page/services/">featured</a>
+            <a href="#category">category</a>
+            <a href="https://pi-library-62.webnode.page/portfolio/">reviews</a>
+            <a href="./feedback.html">feedback</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#feedback" class="fas fa-feedback"></a>
+</nav>
+
+<!-- login form  -->
+
+<div class="login-form-container" id = "signin" stlye="display:none;">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form method = "post" action="">
+        <h3>Sign in</h3>
+        <span>Username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="" required>
+        <span>Password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" name = "signIn">
+        <p>Forgot Password ? <a href="#">click here</a></p>
+        <p>Don't have an account ?<p>
+        <button id = "signUpButton">Sign Up</button>
+
+
+    </form>
+    <div class="container" id ="signup" >
+        <form method="post" action="">
+            <h3>Sign up</h3>
+               <span>First Name</span>
+            <input type = "text" name = "" class = "box" placeholder="Enter your first name" id = "" required>
+            <span>Last Name</span>
+            <input type ="text" name = "" class ="box" placeholder="Enter your last name" id="" required>
+            <span>Email</span>
+            <input type="email" name="" class="box" placeholder="Enter your email" id="" required>
+            <span>Password</span>
+            <input type ="password" name="" class="box" placeholder="Enter your password" id="" required>
+           <input type="submit" class="btn" value="Sign Up" name="signUp">
+           <p>Already have an account?</p>
+           <button id = "signInButton">Sign in</button>
+          </form>
+    
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>Care to give a tip (kindly in Pi)?</h3>
+            <p>If you’re an Engineering student and need books, Pi-Library has great intellectual archives on a wide range of books. Get these books from top authors and avail open access reading material!</p>
+            <a href="#" class="btn">Access Book</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/1.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/2.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/3.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/4.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/5.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/6.png" alt=""></a>
+            </div>
+            <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/stand.png" class="stand" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- home section ense  -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>Free Education Access</h3>
+            <p>Over 100 readable categories</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>Want To Buy US A Coffee?</h3>
+            <p>You can tip us with some Pi</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>Support Free Education Movements</h3>
+            <p>Help global intellectual development by donating to NGOs assisting with literacy levels enhancement</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7 support</h3>
+            <p>Email us anytime</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- icons section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured books</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                   <a href="./product.html"> <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/7.png" alt=""> </a>
+                </div>
+                <div class="content">
+                    <h3>Featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Alien-Offer.pdf" class="btn">Walk Away With Read Of The Day</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <a href="./product.html"> <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/8.png" alt=""> </a>
+                </div>
+                <div class="content">
+                    <h3>Featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/All-In-The-Mind.pdf" class="btn">"Walk Away With Read Of The Day"</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <a href="product.html"><img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/9.png" alt=""> </a>
+                </div>
+                <div class="content">
+                    <h3>Featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/An-Ounce-of-Cure.pdf" class="btn">"Escape To Another World With Read of The Day"</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Anticipations.pdf" class="btn">"Escape To Another World With Read Of The Day"</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/11.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Anything-You-Can-Do-....pdf" class="btn">"Escape To Another World With Read Of The Day"</a>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/12.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Arm-of-the-Law.pdf" class="btn">"Escape To Another World With Read Of The Day"</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/13.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/A-Slave-is-a-Slave.pdf" class="btn">"Walk Away With Read Of The Day"</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/14.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Assassin.pdf" class="btn">"Walk Away With Read Of The Day"</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/15.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Atlantida.pdf" class="btn">"Walk Away With Read Of The Day"</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/16.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Featured books</h3>
+                    <div class="price">"Tip Author Voluntarily"<span>"Tip Author Voluntarily"</span></div>
+                    <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Atom-Drive.pdf" class="btn">"Walk Away With Read Of The Day"</a>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- category section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>Category</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/17.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Science Fiction</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/18.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fantasy</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/19.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Mystery</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/20.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Thriller</h3>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/21.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Horror</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/22.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Romance</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/23.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fiction</h3>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/24.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Action</h3>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content">
+        <h3>Ultimate read of the day</h3>
+        <h1>Tip Author With Pi</h1>
+        <p>Checkout This Out.</p>
+        <a href="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/Blackwing.pdf" class="btn">Get Read</a>
+    </div>
+
+    <div class="image">
+        <img src="https://github.com/WykeTheAlchemist/Pi-Library-/raw/main/26.png" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>client's reviews</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/pic-1.png" alt="">
+                <h3>Simone </h3>
+                <p>First of all, the customer service is excellent. We get all underground author book for various genres.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/pic-2.png" alt="">
+                <h3>Lucia </h3>
+                <p>Best inclusive book store. Almost all books are available for a wider ranger of audience on a broader spectrum of subjects.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/pic-3.png" alt="">
+                <h3>Viktor </h3>
+                <p>Greetings to customer and ensuring the required Books are available to Customers is quite positive.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/pic-4.png" alt="">
+                <h3>Vasquez </h3>
+                <p>The sheer large volume of open access reading material stored on a single site is absolutely impressive.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/pic-5.png" alt="">
+                <h3>Nkrumah </h3>
+                <p>The digital access of books sometimes difficult to secure physically is always joyous.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/pic-6.png" alt="">
+                <h3>Srinavasa </h3>
+                <p>The intuititive and easy operation of this platform is what makes the day for me!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- reviews section ends -->
+
+<!-- feedback section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>feedback</span> </h1>
+
+    <section class="newsletter">
+
+        <form action="">
+            <h3>give your feedback here...</h3>
+            <a href="https://pi-library-62.webnode.page/contact/" class="btn">Feedback</a>
+            <!-- <a href="https://pi-library-62.webnode.page/contact/"><input type="submit" value="feedback"> -->
+            </a>
+        </form>
+
+    </section>
+</section>
+
+<!-- feedback section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Zimbabwe </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> New Zealand </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="https://pi-library-62.webnode.page/home/"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="https://pi-library-62.webnode.page/services/"> <i class="fas fa-arrow-right"></i> featured </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Category </a>
+            <a href="https://pi-library-62.webnode.page/portfolio/"> <i class="fas fa-arrow-right"></i> reviews </a>
+            <a href="./feedback.html"> <i class="fas fa-arrow-right"></i> feedback </a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="https://pi-library-62.webnode.page/about-us/"> <i class="fas fa-arrow-right"></i> Account info </a>
+            <a href="https://github.com/WykeTheAlchemist/Pi-Library-/"> <i class="fas fa-arrow-right"></i> Read books </a>
+            <a href="./privatepolicy.html"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Tips and Donations </a>
+            <a href="https://pi-library-62.webnode.page/our-work/"> <i class="fas fa-arrow-right"></i> Our Serivces </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +263 78 411 9018 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +263 78 010 3377 </a>
+            <a href="harryhoaxely@gmail.com"> <i class="fas fa-envelope"></i> harryhoaxley@gmail.com </a>
+            <a href="mailto:mutambisit1@gmail.com"> <i class="fas fa-envelope"></i> mutambisit1@gmail.com </a>
+            <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/worldmap.png" class="map" alt="">
+        </div>
+
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="credit"> created by <span> Pi Library </span>copyright ©2024 all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+<div class="loader-container">
+    <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/loader-img.gif" alt="">
+</div>
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
